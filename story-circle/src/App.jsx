@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import AboutPage from './Components/AboutPage'
 import BookPage from './Components/BookPage'
@@ -10,6 +9,8 @@ import LogIn from './Components/LogIn'
 import SignUp from './Components/SignUp'
 import NavBar from './Components/Navbar'
 import HomePage from './Components/HomePage'
+import ClubMessages from "./Components/ClubMessages";
+import BooksDetails from './Components/BooksDetails'
 
 
 
@@ -23,13 +24,15 @@ function App() {
         <Route path="/signup" exact="true" element={<SignUp />} />
         <Route path="/login" exact="true" element={<LogIn />} />
         <Route path="/clubs" exact="true" element={<Clubs />} />
-        <Route path="/clubs/:index" exact="true" element={<ClubPage/>} />
+        <Route path="/clubs/:index" exact="true" element={<ClubPage />} />
         <Route path="/books" exact="true" element={<Books />} />
         <Route path="/books/:index" exact="true" element={<BookPage />} />
         <Route path="/about" exact="true" element={<AboutPage />} />
+        <Route path="/ClubMessages" exact="true" element={<ClubMessages />} />
+        <Route path="/book/:id" exact="true" element={<BooksDetails />} />
       </Routes>
     </>
-  )
+  );
 }
 
 export default App

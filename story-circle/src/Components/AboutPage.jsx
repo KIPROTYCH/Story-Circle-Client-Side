@@ -94,7 +94,7 @@ function AboutPage() {
           <div className="content">
             <img
               src="https://www.tourmyindia.com/imgnew/recognition-tour-01.svg"
-              alt= "not found"
+              alt="not found"
               width={80}
             />
             <p className="content-description">
@@ -145,5 +145,3 @@ function AboutPage() {
 }
 
 export default AboutPage;
-
-
